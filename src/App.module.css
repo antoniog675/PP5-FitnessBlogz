@@ -1,7 +1,11 @@
 .App {
     font-family: Josefin Sans, sans serif;
-    color: white;
+    color: black;
     min-height: 100vh;
+}
+
+.Main {
+  padding-top: 82px;
 }
 
 * {
@@ -18,9 +22,7 @@
   }
   
   a:hover i {
-    color: white;
-    font-size:1.5em;
-    transition-duration: 100ms;
+    color: black;
   }
   
   i {

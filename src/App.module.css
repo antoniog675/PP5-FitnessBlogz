@@ -1,0 +1,34 @@
+.App {
+    font-family: Josefin Sans, sans serif;
+    color: white;
+    min-height: 100vh;
+}
+
+* {
+    box-sizing: border-box;
+  }
+
+  a {
+    color: white;
+    transition: color ease-in-out 0.3s;
+  }
+  
+  a:hover {
+    text-decoration: none;
+  }
+  
+  a:hover i {
+    color: white;
+    font-size:1.5em;
+    transition-duration: 100ms;
+  }
+  
+  i {
+    color: white;
+    font-size: 1.4rem;
+    padding: 7px;
+  }
+  
+  i:hover {
+    cursor: pointer;
+  }

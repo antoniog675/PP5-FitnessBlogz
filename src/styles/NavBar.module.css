@@ -1,0 +1,15 @@
+.NavBarContent {
+    background-color: #1a1a1a;
+    color: white;
+    font-size: 1.4em;
+}
+
+.NavBarContent:hover {
+    color: white;
+    font-size:1.5em;
+    transition-duration: 100ms;
+}
+
+.NavBar {
+    background-color: #1a1a1a;
+}

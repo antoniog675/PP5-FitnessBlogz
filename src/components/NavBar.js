@@ -6,10 +6,13 @@ import { NavLink } from "react-router-dom";
 import { useCurrentUser, useSetCurrentUser } from '../contexts/CurrentUserContext';
 import Avatar from './Avatar';
 import axios from 'axios';
+import useClickOutsideToggle from '../hooks/useClickOutsideToggle';
 
 const NavBar = () => {
   const currentUser = useCurrentUser();
   const setCurrentUser = useSetCurrentUser();
+
+  const { expanded, setExpanded, ref} = useClickOutsideToggle();
 
   const handleSignOut = async () => {
     try {
@@ -38,13 +41,13 @@ const NavBar = () => {
     </>
   )
   return (
-    <Navbar className={styles.NavBar} expand="md" fixed="top">
+    <Navbar expanded={expanded} className={styles.NavBar} expand="md" fixed="top">
     <Container>
         <NavLink to="/">
           <Navbar.Brand className="col-2"><img src={logo} alt='website logo' height="75" /></Navbar.Brand>
         </NavLink>
         {currentUser && addPostIcon}
-        <Navbar.Toggle className="navbar-dark" aria-controls="basic-navbar-nav" />
+        <Navbar.Toggle ref={ref} onClick={() => setExpanded(!expanded)} className="navbar-dark" aria-controls="basic-navbar-nav" />
         <Navbar.Collapse className="white" id="basic-navbar-nav">
             <NavLink to="/" className={styles.NavBarTitle} ><h1>FitnessBlogz </h1></NavLink>
             <Nav className="ms-auto text-center">

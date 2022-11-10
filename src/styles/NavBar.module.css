@@ -18,6 +18,10 @@
     background-color: #1a1a1a;
 }
 
+.NavBar i {
+    color: white;
+}
+
 .NavBarTitle {
     color: white;
     background-color: #1a1a1a;

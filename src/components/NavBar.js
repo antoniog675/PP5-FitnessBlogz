@@ -24,7 +24,6 @@ const NavBar = () => {
   }
 
   const loggedInIcons = <>
-    <NavLink to="/feed" className={styles.NavBarContent} activeClassName={styles.Active}> <i className="fas fa-stream"></i>Feed</NavLink>
     <NavLink to="/liked" className={styles.NavBarContent} activeClassName={styles.Active}> <i className="fas fa-heart"></i>Liked</NavLink>
     <NavLink to="/" className={styles.NavBarContent} onClick={handleSignOut}> <i className="fas fa-sign-out-alt"></i>Sign out</NavLink>
     <NavLink to={`/profiles/${currentUser?.profile_id}`} className={styles.NavBarContent} onClick={() => {}}> <Avatar src={currentUser?.profile_image} text="Profile" height={40} />Sign out</NavLink>
@@ -52,7 +51,7 @@ const NavBar = () => {
         <Navbar.Collapse className="white" id="basic-navbar-nav">
             {/* <NavLink to="/" className={styles.NavBarTitle} ><h1>FitnessBlogz </h1></NavLink> */}
             <Nav className="ms-auto text-center">
-                <NavLink exact to="/" className={styles.NavBarContent} activeClassName={styles.Active}> <i className="fas fa-home"></i> Home</NavLink>
+                <NavLink exact to="/" className={styles.NavBarContent} activeClassName={styles.Active}> <i className="fas fa-stream"></i> Feed</NavLink>
                 {currentUser ? loggedInIcons : loggedOutIcons}
             </Nav>
         </Navbar.Collapse>

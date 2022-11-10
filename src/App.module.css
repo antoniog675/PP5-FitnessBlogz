@@ -32,12 +32,13 @@
   }
 
   a {
-    color: white;
-    transition: color ease-in-out 0.3s;
+    color: black;
+    text-decoration: none;
   }
   
   a:hover {
-    text-decoration: none;
+    color: black;
+    font-size: larger;
   }
   
   a:hover i {

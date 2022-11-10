@@ -23,6 +23,11 @@
     background-color: #1a1a1a;
     text-decoration: none;
     text-align: center;
+    margin-right: 5px;
+}
+
+.NavBarTitle:hover {
+    color: white;
 }
 
 .Active i {

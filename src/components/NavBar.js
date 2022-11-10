@@ -46,10 +46,11 @@ const NavBar = () => {
         <NavLink to="/">
           <Navbar.Brand className="col-2"><img src={logo} alt='website logo' height="75" /></Navbar.Brand>
         </NavLink>
+        <NavLink to="/" className={`${styles.NavBarTitle} d-none d-sm-block`}  ><h1>FitnessBlogz </h1></NavLink>
         {currentUser && addPostIcon}
         <Navbar.Toggle ref={ref} onClick={() => setExpanded(!expanded)} className="navbar-dark" aria-controls="basic-navbar-nav" />
         <Navbar.Collapse className="white" id="basic-navbar-nav">
-            <NavLink to="/" className={styles.NavBarTitle} ><h1>FitnessBlogz </h1></NavLink>
+            {/* <NavLink to="/" className={styles.NavBarTitle} ><h1>FitnessBlogz </h1></NavLink> */}
             <Nav className="ms-auto text-center">
                 <NavLink exact to="/" className={styles.NavBarContent} activeClassName={styles.Active}> <i className="fas fa-home"></i> Home</NavLink>
                 {currentUser ? loggedInIcons : loggedOutIcons}

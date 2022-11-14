@@ -26,7 +26,7 @@ const NavBar = () => {
   const loggedInIcons = <>
     <NavLink to="/liked" className={styles.NavBarContent} activeClassName={styles.Active}> <i className="fas fa-heart"></i>Liked</NavLink>
     <NavLink to="/" className={styles.NavBarContent} onClick={handleSignOut}> <i className="fas fa-sign-out-alt"></i>Sign out</NavLink>
-    <NavLink to={`/profiles/${currentUser?.profile_id}`} className={styles.NavBarContent} onClick={() => {}}> <Avatar src={currentUser?.profile_image} text="Profile" height={40} />Sign out</NavLink>
+    <NavLink to={`/profiles/${currentUser?.profile_id}`} className={styles.NavBarContent} onClick={() => {}}> <Avatar src={currentUser?.profile_image} text="Profile" height={40} /></NavLink>
     </>
 
   const addPostIcon = (

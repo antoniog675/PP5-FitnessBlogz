@@ -5,3 +5,8 @@
 .uploadImage {
     height: 50%;
 }
+
+.text_fields {
+  margin-top: 5px;
+  margin-bottom: 20px;
+}

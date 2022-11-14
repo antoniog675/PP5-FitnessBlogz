@@ -77,7 +77,7 @@ const Post = (props) => {
   return (
     <Card className={styles.Post}>
         <Card.Body>
-            <Media className="align-items-center justify-content-between">
+            <Media className="d-flex justify-content-between"> {/* align-items-center justify-content-between */}
                 <Link to={`/profiles/${profile_id}`}>
                     <Avatar src={profile_image} height={55} />
                     {owner}

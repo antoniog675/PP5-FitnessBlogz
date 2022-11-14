@@ -60,6 +60,7 @@ const UsernameForm = () => {
             <Form.Group>
               <Form.Label>Change username</Form.Label>
               <Form.Control
+                className="mb-4"
                 placeholder="username"
                 type="text"
                 value={username}

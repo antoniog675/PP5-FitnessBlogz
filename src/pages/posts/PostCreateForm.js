@@ -81,14 +81,14 @@ function PostCreateForm() {
                 ))}
 
       <Form.Group>
-        <Form.Label>Content</Form.Label>
-        <Form.Control as="textarea" rows={6} name="content" value={content} onChange={handleChange} />
+        <Form.Label className="mt-3">Content</Form.Label>
+        <Form.Control className="mb-4" as="textarea" rows={6} name="content" value={content} onChange={handleChange} />
       </Form.Group>
-      {errors.content?.map((message, idx) => (
-                  <Alert key={idx} variant="warning">
-                    {message}
-                  </Alert>
-                ))}
+        {errors.content?.map((message, idx) => (
+                    <Alert key={idx} variant="warning">
+                      {message}
+                    </Alert>
+                  ))}
     
       <Button
         className={`${btnStyles.Button} ${btnStyles.Blue}`}

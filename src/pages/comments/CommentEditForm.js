@@ -5,6 +5,8 @@ import { axiosRes } from "../../api/axiosDefaults";
 
 import styles from "../../styles/CommentCreateEditForm.module.css";
 
+// Renders the comment edit form for users to edit comment
+
 function CommentEditForm(props) {
     const { id, content, setShowEditForm, setComments } = props;
 

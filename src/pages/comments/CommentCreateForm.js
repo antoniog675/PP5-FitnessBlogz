@@ -1,12 +1,14 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 
-import Form from "react-bootstrap/Form";
-import InputGroup from "react-bootstrap/InputGroup";
+import { Form, InputGroup } from "react-bootstrap";
 
 import styles from "../../styles/CommentCreateEditForm.module.css";
 import Avatar from "../../components/Avatar";
 import { axiosRes } from "../../api/axiosDefaults"
+
+// Renders form for users to leave a message under post, only signed in users
+// will be able to leave a comment
 
 function CommentCreateForm(props) {
     const { post, setPost, setComments, profileImage, profile_id } = props;

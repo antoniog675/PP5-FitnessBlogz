@@ -8,6 +8,9 @@ import { useCurrentUser } from '../../contexts/CurrentUserContext'
 import styles from "../../styles/Comment.module.css"
 import CommentEditForm from "./CommentEditForm";
 
+// Renders the comment section for users, takes in user profile image, name, date uploaded etc.
+// Dropdown to delete user comment or call the edit comment to edit and update comments
+
 const Comment = (props) => {
     const { profile_id, profile_image, owner, updated_at, content, id, setPost, setComments } = props
     const [showEditForm, setShowEditForm] = useState(false);

@@ -1,12 +1,6 @@
 import React, { useState } from "react";
 
-import Form from "react-bootstrap/Form";
-import Alert from "react-bootstrap/Alert";
-import Button from "react-bootstrap/Button";
-import Col from "react-bootstrap/Col";
-import Row from "react-bootstrap/Row";
-import Image from "react-bootstrap/Image";
-import Container from "react-bootstrap/Container";
+import { Form, Alert, Button, Col, Row, Image, Container } from "react-bootstrap";
 
 import { Link, useHistory } from "react-router-dom";
 
@@ -17,6 +11,8 @@ import axios from "axios";
 import { useSetCurrentUser } from "../../contexts/CurrentUserContext";
 import { useRedirect } from "../../hooks/useRedirect";
 import { setTokenTimestamp } from "../../utils/utils";
+
+// Renders user sign in form and handles sign in
 
 function SignInForm() {
     const setCurrentUser = useSetCurrentUser();

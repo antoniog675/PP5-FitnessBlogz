@@ -3,6 +3,9 @@ import { axiosReq, axiosRes } from "../api/axiosDefaults";
 import { followHelper, unfollowHelper } from "../utils/utils";
 import { useCurrentUser } from "./CurrentUserContext";
 
+// Going t retrieve the use profile data, will use this to view use profile
+// on popular profiles and handle follow and unfollow
+
 
 const ProfileDataContext = createContext();
 const SetProfileDataContext = createContext();

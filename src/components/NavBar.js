@@ -9,13 +9,19 @@ import axios from 'axios';
 import useClickOutsideToggle from '../hooks/useClickOutsideToggle';
 import { removeTokenTimestamp } from '../utils/utils';
 
-const NavBar = () => {
+// Here we are going to create the log and JSX for the navbar
+
+const NavBar = () => { 
+
+    // Here we are going to retrieve the current user data from the CurrentUserContext.js and set it as currentUser
+
   const currentUser = useCurrentUser();
   const setCurrentUser = useSetCurrentUser();
 
   const { expanded, setExpanded, ref} = useClickOutsideToggle();
 
   const handleSignOut = async () => {
+    // In this function users will be signed out
     try {
       await axios.post('dj-rest-auth/logout/');
       setCurrentUser(null)
@@ -24,6 +30,8 @@ const NavBar = () => {
       console.log(err)
     }
   }
+
+  // JSX for icons on nav bar, depending on user status it will show different icons
 
   const loggedInIcons = <>
       <NavLink to="/liked" className={styles.NavBarContent} activeClassName={styles.Active}> <i className="fas fa-heart"></i>Liked</NavLink>

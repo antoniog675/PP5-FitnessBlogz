@@ -7,6 +7,9 @@ import { MoreDropdown } from '../../components/MoreDropdown';
 import { useCurrentUser } from '../../contexts/CurrentUserContext';
 import styles from "../../styles/Post.module.css"
 
+// We will render all of a posts details in this file, the owner, date created, likes count, comments count, image
+// Other users will be able to like posts, owner won't be able to like their own posts
+
 const Post = (props) => {
     const {
         id,

@@ -4,6 +4,8 @@ import { useHistory } from 'react-router-dom/cjs/react-router-dom.min';
 import { axiosReq, axiosRes } from '../api/axiosDefaults';
 import { removeTokenTimestamp, shouldRefreshToken } from '../utils/utils';
 
+// Create user context to be used throughout the application
+
 export const CurrentUserContext = createContext();
 export const SetCurrentUserContext = createContext();
 
@@ -26,6 +28,8 @@ export const CurrentUserProvider = ({ children }) => {
     useEffect(() => {
       handleMount();
     }, []);
+
+    // Cache the results between re-renders
 
     useMemo(() => {
         axiosReq.interceptors.request.use(
@@ -50,6 +54,8 @@ export const CurrentUserProvider = ({ children }) => {
               return Promise.reject(err);
             }
         );
+      
+      // Get the response from the api
 
       axiosRes.interceptors.response.use(
           (response) => response,

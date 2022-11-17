@@ -1,5 +1,7 @@
 import { useEffect, useRef, useState } from 'react'
 
+// Handles the dropdown navbar on smaller screens, toggles from open and close
+
 const useClickOutsideToggle = () => {
     const [expanded, setExpanded] = useState(false)
     const ref = useRef(null);

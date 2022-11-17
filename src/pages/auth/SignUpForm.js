@@ -9,6 +9,8 @@ import { Form, Button, Image, Col, Row, Container, Alert } from "react-bootstrap
 import axios from "axios";
 import { useRedirect } from "../../hooks/useRedirect";
 
+// Handles signup form for users using the dj-rest-auth, renders form
+
 const SignUpForm = () => {
     useRedirect('loggedIn')
     const [signUpData, setSignUpData] = useState({

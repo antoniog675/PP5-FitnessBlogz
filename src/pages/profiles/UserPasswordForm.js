@@ -9,6 +9,9 @@ import { useCurrentUser } from "../../contexts/CurrentUserContext";
 import btnStyles from "../../styles/Button.module.css";
 import appStyles from "../../App.module.css";
 
+// Users will be able to change their login passwords with this form, they need to sign in, be the owner and ....
+// then they will be allowed to make the changes, will redirect them back to their profile
+
 const UserPasswordForm = () => {
   const history = useHistory();
   const { id } = useParams();
@@ -60,6 +63,7 @@ const UserPasswordForm = () => {
                         value={new_password1}
                         onChange={handleChange}
                         name="new_password1"
+                        className="mt-2 mb-2"
                         />
                     </Form.Group>
                     {errors?.new_password1?.map((message, idx) => (
@@ -75,6 +79,7 @@ const UserPasswordForm = () => {
                         value={new_password2}
                         onChange={handleChange}
                         name="new_password2"
+                        className="mt-2 mb-2"
                         />
                     </Form.Group>
                     {errors?.new_password2?.map((message, idx) => (

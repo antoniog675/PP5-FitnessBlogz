@@ -16,6 +16,7 @@ import PopularProfiles from "../profiles/PopularProfiles";
 
 // Posts page will render the feed, will render all the posts that have been submitted, will have an infinite scroll
 // to improve user experience, no more pagination
+// Handles if there are posts, handles if posts are still loading, handles if there are no comments
 
 function PostsPage({ message, filter="" }) {
   const [posts, setPosts] = useState({ results: []});

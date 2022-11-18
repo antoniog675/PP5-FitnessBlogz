@@ -7,6 +7,8 @@ import Avatar from '../../components/Avatar';
 import { Button } from 'react-bootstrap';
 import { useSetProfileData } from '../../contexts/ProfileDataContext';
 
+// This create the user page, users/visitors can view the users 
+
 
 const Profile = (props) => {
     const {profile, mobile, imageSize=55} = props;

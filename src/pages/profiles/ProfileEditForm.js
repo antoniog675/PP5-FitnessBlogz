@@ -1,19 +1,16 @@
 import React, { useState, useEffect, useRef } from "react";
 import { useHistory, useParams } from "react-router-dom";
 
-import Form from "react-bootstrap/Form";
-import Button from "react-bootstrap/Button";
-import Image from "react-bootstrap/Image";
-import Row from "react-bootstrap/Row";
-import Col from "react-bootstrap/Col";
-import Container from "react-bootstrap/Container";
-import Alert from "react-bootstrap/Alert";
+import { Form , Button, Image, Row, Col, Container, Alert} from "react-bootstrap";
 
 import { axiosReq } from "../../api/axiosDefaults";
 import { useCurrentUser, useSetCurrentUser } from "../../contexts/CurrentUserContext";
 
 import btnStyles from "../../styles/Button.module.css";
 import appStyles from "../../App.module.css";
+
+// Users will be able to edit their profile in this page, has to be owner of the profile, will load previous details
+// Can only change bio or profile picture
 
 const ProfileEditForm = () => {
   const currentUser = useCurrentUser();
@@ -90,6 +87,7 @@ const ProfileEditForm = () => {
           onChange={handleChange}
           name="content"
           rows={7}
+          className="mb-3"
           />
       </Form.Group>
 
@@ -99,12 +97,12 @@ const ProfileEditForm = () => {
         </Alert>
       ))}
       <Button
-      className={`${btnStyles.Button} ${btnStyles.Blue}`}
+      className={`${btnStyles.Button} ${btnStyles.Blue} `}
       onClick={() => history.goBack()}
       >
           cancel
       </Button>
-      <Button className={`${btnStyles.Button} ${btnStyles.Blue}`} type="submit">
+      <Button className={`${btnStyles.Button} ${btnStyles.Blue} `} type="submit">
           save
       </Button>
     </>

@@ -29,6 +29,8 @@ function ProfilePage() {
   const is_owner = currentUser?.username === profile?.owner;
   const [profilePosts, setProfilePosts] = useState({ results: []});
 
+  // Returns a selected profiles info, displays profile, posts, number of followers and following, bio etc
+
   useEffect(() => {
     const fetchData = async () => {
         try {

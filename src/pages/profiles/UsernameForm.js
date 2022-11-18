@@ -9,6 +9,9 @@ import {  useCurrentUser, useSetCurrentUser } from "../../contexts/CurrentUserCo
 import btnStyles from "../../styles/Button.module.css";
 import appStyles from "../../App.module.css";
 
+// Form to change the username of a profile, will need to be the user once again, after user clicks save they get..
+// redirected to home previous page, which will be the profile page to view changes
+
 const UsernameForm = () => {
   const [username, setUsername] = useState("");
   const [errors, setErrors] = useState({});

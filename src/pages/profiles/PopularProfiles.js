@@ -5,6 +5,7 @@ import Asset from '../../components/Asset';
 import { useProfileData } from '../../contexts/ProfileDataContext'
 import Profile from './Profile';
 
+// Renders popular profiles with profile image and name, visitors and logged in users can click and view profiles
 
 const PopularProfiles = ({mobile}) => {
     const { popularProfiles } = useProfileData();

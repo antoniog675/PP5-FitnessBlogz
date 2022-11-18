@@ -3,7 +3,6 @@
     color: black;
     min-height: 100vh;
 }
-
 .Main {
   padding-top: 90px;
 }
@@ -11,7 +10,7 @@
 .Content {
   background-color: #ffffff;
   padding: 10px;
-  border-radius: 2px;
+  border-radius: 10px;
   border: 1px solid #dadadf;
 }
 

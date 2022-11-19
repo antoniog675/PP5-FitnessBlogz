@@ -42,20 +42,20 @@
   .BlueOutline,
   .Blue:hover {
     /* border: 1px solid #2142b2; */
-    background-color: #ffffff;
-    color: #2142b2;
+    background-color: white;
+    color: black;
   }
   
   .Black,
   .BlackOutline:hover {
-    background-color: #242a3d;
-    color: aliceblue;
+    background-color: grey;
+    color: white;
   }
   
   .Black:hover,
   .BlackOutline {
-    background-color: aliceblue;
-    color: #242a3d;
+    background-color: white;
+    color: black;
   }
   
   .Bright {

@@ -7,10 +7,10 @@ import React from 'react'
 
 const NotFound = () => {
   return (
-        <div className={styles.Image}>
-            <Asset src={NoResults} />
-            <p>Sorry, the page you're looking for doesn't exist</p>
-        </div>
+    <div className={styles.Image}>
+      <Asset src={NoResults} />
+      <p>Sorry, the page you're looking for doesn't exist</p>
+    </div>
   )
 }
 

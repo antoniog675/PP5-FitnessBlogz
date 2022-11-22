@@ -373,15 +373,45 @@ The navbar will have a dropdown for mobile versions -
 
 ## Testing 
 
-- Navbar testing -
+- Navbar testing - 
 
-- Testing for users sign in and sign up
+![js code for navbar tests](/src/assets/tests-navbar.jpg)
 
-- Does the correct post load up when selected
+- Tests passed
 
-- Does the correct profile load up when selected
+![terminal result, tests passing](/src/assets/tests-navbar-passed.jpg)
 
-- Number of likes and comments correct 
+### Manual testing -
+
+- Navbar 
+
+- Profile created - Demostrate with API
+
+- Post created - Demostrate with API
+
+- Like button works
+
+- Correct number of comments, comment uploaded
+
+- Following and Unfollowing - Followed profiles followers increment, users following count increments as well
+
+- Edit Post
+
+- Edit Comment
+
+- Edit Profile
+
+- Alert messages for empty inputs or bad authentication, sign in, sign up, creating posts need requirements
+
+- Searh bar, returns correct post/profile posts
+
+- Do navbar urls work?
+
+- Correct profiles returnt?
+
+- User posts count correct
+
+- Does 'Liked' link return all of the users liked posts
 
 ### Website efficiency
 

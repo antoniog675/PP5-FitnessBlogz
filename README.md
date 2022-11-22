@@ -132,23 +132,54 @@ The image below shows all user stories completed an implemented
 ### Skeleton -
 #### Wireframe -
 - Desktop
-    - Feed
+    - Feed (Signed out/ new user)
+    ![Wireframe of feed and popular profiles](/src/assets/wireframe-visitors-desktop.jpg)
+    - Feed (Signed in user)
+    ![Wireframe of feed and popular profiles, nav bar changed](/src//assets/wireframes-feed-desktop.jpg)
     - Sign in
+    ![Wireframe for sign in form](/src/assets/wireframe-signin-desktop.jpg)
     - Sign up
+    ![Wireframe for sign up form](/src/assets/wireframe-signup-desktop.jpg)
     - Create post
-    - Edit and delete post
+    ![Wireframe to creating a post](/src/assets/wireframe-createpost-desktop.jpg)
+    - Edit post
+    ![Wireframe to editing a post](/src/assets/wireframe-editpost-desktop.jpg)
     - Edit profile
+    ![Wireframe to editing profile](/src/assets/wireframe-editProfile-desktop.jpg)
     - Edit username
+    ![Wireframe to edit username](/src/assets/wireframe-changeusername-desktop.jpg)
     - Edit password
+    ![Wireframe to change password](/src/assets/wireframe-changepassword-desktop.jpg)
 - Mobile
     - Feed
+    ![Wireframe of feed in a mobile version, also showing dropdown functionality](/src/assets/wireframe-mobile-feed-dropdown.jpg)
     - Sign in
+
+    ![Wireframe for sign in form on mobile](/src/assets/wireframe-signin-mobile.jpg)
+
     - Sign up
+
+    ![Wireframe for sign up form on mobile](/src/assets/wireframe-signup-mobile.jpg)
+
     - Create post
-    - Edit and delete post
+
+    ![Wireframe to create a post on mobile](/src/assets/wireframe-createpost-mobile.jpg)
+
+    - Edit post
+
+    ![Wireframe to edit post on mobile](/src/assets/wireframe-editpost-mobile.jpg)
+
     - Edit profile
+
+    ![Wireframe to edit profile on mobile](/src/assets/wireframe-editpost-mobile.jpg)
+
     - Edit username
+
+    ![Wireframe to edit username on mobile](/src/assets/wireframe-changeusername-mobile.jpg)
+
     - Edit password
+
+    ![Wireframe to change password on mobile ](/src/assets/wireframe-changepassword-mobile.jpg)
 
 ### Surface -
 #### Color scheme -
@@ -166,29 +197,183 @@ The image below shows all user stories completed an implemented
 
 ## Features
 
-### Feed
+### Feed -
 
-### Navbar
+- This will be the landing page of the website, as soon as a user visits the website they will be able to view most recent posts, search bar to search for posts, popular profiles and a navbar which will be used to navigate around the website and a sign in/up links.
 
-### Search bar
+![Screenshot of the landing page of "FitnessBlogz"](/src/assets/features-feed.jpg)
+
+### Navbar -
+
+#### Signed out - 
+
+- The Nav bar will change depending on the user status, whether they are logged in or out.
+The logo and title on the will be links to the home/feed page, for when a user is down browsing around the website they can just look at most recent posts.
+- In the Image below you can see that the navbar is only showing 'Feed', 'Sign in' and 'Sign up', this is shown like this as a visitor has no access to the features that a logged in user has.
+- If they already have an account they can just sign in, else, users need to create an account.
+Visitors will still be able to view posts, profiles and most popular profiles, but won't be able to have all the features a registered user has.
+
+![Navigation bar showing logged out users features](/src/assets/features-navbar-signedOut.jpg)
+
+#### Signed in -
+
+- When a user has logged in the navbar will change showing all the features available, 'Sign up' link is gone,  'Add post', 'Liked' and 'Profile' links appear on the navbar
+- Users will now be able to add posts by clicking on the 'Add post' and be redirected to the add post form. 
+- Liked link will allow users to view a list of posts that they have liked, this way they can see all posts that are relevant to them.
+- The 'Profile' link will allow users to visit their own profile and be able to edit and make changes to their profile if needed
+
+
+![Navigation bar showing rest of the features available to sign in user](/src/assets/features-navbar-signedIn.jpg)
+
+#### Dropdown Mobile -
+
+The navbar will have a dropdown for mobile versions -
+
+- Signed out
+
+![](/src/assets/features-dropdown-signedOut.jpg)
+
+- Signed in
+
+![](/src/assets/features-dropdown-signedIn.jpg)
+
+
+
+#### Hover and active page features -
+
+- The final feature will be the hover and active page features
+- When a user is hovering over any of the links in the navbar the background color and text color of the link will be inverted to add a bit of interactivity.
+- When a user is on a certain page/link, the page/link that they have selected will always remain with a white background and black text to help users know which page they are on.
+
+![Navbar, links user is hovering or the website they are on will be highlighted](/src/assets/features-navabr-hover.jpg)
+
+### Search bar -
+
+- Search bar feature will be used to look for certain posts, can use the post title or the profile name to filter out the post
+
+![Search bar filtering out posts](/src/assets/search-desktop.jpg)
 
 ### Sign up and Sign in
 
-### Create, edit and delete posts
+- Sign up Form
 
-### Create, edit and delete comments
+![Sign up form on desktop](/src/assets/features-signup-desktop.jpg)
+
+- Sign in Form
+
+![Sign in form on desktop](/src/assets/features-signin-desktop.jpg)
+
+### Create, edit and delete posts - 
+
+- Add post, select on the 'Add post' when signed in
+
+![Creating post form](/src/assets/features_add_post-desktop.jpg)
+
+- Edit - 
+
+![Edit post form](/src/assets/features-editPost-desktop.jpg)
+
+- Delete - 
+
+![Delete button on post dropdown](/src/assets/features-delete_post.jpg)
+
+
+### Create, edit and delete comments -
+
+- Leaving a comment the user needs to be signed in, click on a pot and scroll under the post, there will be a comment form which will allow you to 'post' when there is comment in the comment form
+
+![Comment form on desktop](/src/assets/features-commentForm-desktop.jpg)
+
+- Leaving a comment
+
+![Comment form with content and button available to handle submit](/src/assets/features-commenting-desktop.jpg)
+
+- Comment posted, dropdown now available, you can edit, or you can select the trash bin to delete the comment
+
+![Comment Edit and Delete dropdown](/src/assets/features-comment-dropdown.jpg)
+
+- Edit form for comments
+
+![Comment edit form](/src/assets/features-comment-edited.jpg)
+
 
 ### Like and comment features
+
+- Every time a user like a post or leaves a comment the like and comment count will update according to the number of like and comments below the pot
+
+![Post has one like and 12 comments](/src/assets/features-commentLike-count.jpg)
+
+<hr>
+
+## Mobile Version -
+
+- Feed -
+
+![Mobile version of the feed](/src/assets/features-mobile.jpg)
+
+- Search -
+
+![Search bar on mobile version](/src/assets/search-mobile.jpg)
+
+- Sign up Form
+
+![Sign up form on mobile](/src/assets/features-signup-mobile.jpg)
+
+- Sign in Form
+
+![Sign in form on mobile](/src/assets/features-signin-mobile.jpg)
+
+- Create, Edit and Delete -
+
+- Add post -
+
+![Creating post form, mobile verion](/src/assets/features-addPost-mobile.jpg)
+
+- Edit -
+
+![Edit post form on mobile version](/src/assets/features-editPost-mobile.jpg)
+
+- Delete
+
+![Delete post button to delete post](/src/assets/features-delete_post.jpg)
+
+
+- Comment Form
+
+![Comment form for mobile](/src/assets/features-commentForm-mobile.jpg)
+
+- Edit comment Form
+
+![Comment edit form for mobile](/src/assets/features-commentEdit-mobile.jpg)
+
 
 <hr>
 
 ## Technologies Used
 
+- Languages
+    - HTML
+    - CSS
+    - Javascript
+    - Python
+- Frameworks and Libraries 
+    - React
+    - React Bootstrap
+    - Django
+    - Github
+    - Gitpod
+    - Heroku
+    - Balsamiq
+    - Pep8
+    - Cloudinary
+    - PostgreSQL
+    - Bootstrap
+
 <hr>
 
 ## Testing 
 
-- Navbar testing
+- Navbar testing -
 
 - Testing for users sign in and sign up
 
@@ -213,10 +398,6 @@ Does the navbar change according to whether the user is signed in or no?
 
 <hr>
 
-## Finished Product
-
-<hr>
-
 ## Credits
 
 <hr>
@@ -229,4 +410,8 @@ Does the navbar change according to whether the user is signed in or no?
 
 <hr>
 
-Images: From cloudinary sample pictures, the form picture
+- Images: From cloudinary sample pictures, the form picture
+- Code institute - Biggest acknowledgement goes to code institute for allowing me to use the API created in the walkthrough to video to make this project. I was able to get an inspiration of what to do for my project because of the moments project.
+- Slack - Slack was my next best friend as when I was getting errors in my project I was able to jump onto slack and look for related queries or just drop a comment and ask for help.
+Code institute tutors were great, 'jo_ci' was so great with helping me with my doubts!
+- Tutor - Next acknowledgement is for my tutor Marcel, I recently just got him but I could tell straight away he meant buisness and he was great. Any questions, ideas, or topics I wanted to discuss he helped and guided me well until I understood. 

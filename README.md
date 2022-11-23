@@ -519,7 +519,32 @@ In this image below I am searching for 'ivan' and all his posts are returnt
 
 - These tests show that the correct posts and profiles are being returnt
 
-### Website efficiency
+### Website efficiency -
+
+- Lighthouse results for desktop
+    - Feed
+    ![Lighthouse result for the feed page](/src/assets/lighthouse-desktop-feed.jpg)
+    - Liked
+    ![Lighthouse result for the Liked page](/src/assets/lighthouse-desktop-liked.jpg)
+    - Profile
+    ![Lighthouse result for the profile page](/src/assets/lighthouse-desktop-profile.jpg)
+    - Sign in
+    ![Lighthouse result for the sign in page](/src/assets/lighthouse-desktop-signin.jpg)
+    - Post
+    ![Lighthouse result for the/a post page](/src/assets/lighthouse-desktop-post.jpg)
+    - Sign up
+    ![Lighthouse result for the signup page](/src/assets/lighthouse-desktop-signup.jpg)
+    - Add post
+    ![Lighthouse result for the create post form](/src/assets/lighthouse-desktop-create-post.jpg)
+
+- Lighthouse results for mobile
+    - Feed
+    - Liked
+    - Profile
+    - Sign in
+    - Post
+    - Sign up
+    - Add post
 
 ### Use ESlint to rest the whole website and individual files?
 

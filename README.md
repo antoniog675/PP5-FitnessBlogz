@@ -478,21 +478,46 @@ The navbar will have a dropdown for mobile versions -
 
 <hr>
 
-- Edit Post
+- Edit Post -
+    - A logged in user will be able to edit their posts, to test this I will be changing the Test post. To be able to edit, you need to be the post owner, logged in and then the three dropdown dots will appear allowing you to edit or delete a post.
+    - Delete button does work, when the user selects this button the post is deleted...
 
-- Edit Profile
+    ![Post edit dropdown, showing edit button and trashcan button for delete](/src/assets/tests-edit-post-dropdown.jpg)
 
-- Alert messages for empty inputs or bad authentication, sign in, sign up, creating posts need requirements
+    - When you select the edit button you get redirect to the post/edit url, as seen on the URL in the image below
 
-- Searh bar, returns correct post/profile posts
+    ![Edit form showing content of the post that is eing edited and the URL matching the post number](/src/assets/tests-edit-post-editpage.jpg)
+    
+    - Finally on the image below you will see the post being changed 
+    to 'Edit test', this shows that the edit form is working and the post content has been changed.
 
-- Do navbar urls work?
+    ![Image of the post details, updated reflecting on the changes that have been made](/src/assets/tests-edit-post-EDITED.jpg)
 
-- Correct profiles returnt?
+<hr>
 
-- User posts count correct
+- Edit Profile - 
+    - The user has three options when editing their profile, they can edit the bio and image, username and then passwords.
+    - The user clicks on the droppdown and these 3 options appear
+    ![](/src/assets/tests-edit-profile-dropdown.jpg)
+    - In the image below the user is taken to the edit form, you can change your bio, and below the image it says image, and is displaying your current image.
+    ![](/src/assets/tests-edit-profile.jpg)
+    - Now you can see that the changes have been applied and that the edit form is working
+    ![](/src/assets/tests-edit-profile-changed.jpg)
+    - When users select the username on the dropdown they are taken to this username form where users can change their username, when they click save, the changes are made. This is shown in the profile page
+    ![](/src/assets/tests-edit-username.jpg)
+    - This is the password form that allows you to change your password, I made the change, signed out, signed in with the new password and it works as it should
+    ![](/src/assets/tests-edit-password.jpg)
 
-- Does 'Liked' link return all of the users liked posts
+- The search bar is working as it should, I type in the name of a post or name and it does return the posts containing the keyword that was inputted.
+In this image below I am searching for 'ivan' and all his posts are returnt
+
+![Search bar returning posts that match the search keyword 'ivan'](/src/assets/tests-searchbar.jpg)
+
+- When I search for a certain post, the search bar does as wanted and returns a post with the title matching 'our gym'
+
+![Search bar returning posts that match the search keyword 'our gym'](/src/assets/tests-searchbar-post.jpg)
+
+- These tests show that the correct posts and profiles are being returnt
 
 ### Website efficiency
 

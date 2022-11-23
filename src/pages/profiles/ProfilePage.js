@@ -78,9 +78,9 @@ function ProfilePage() {
         </Col>
         <Col lg={3} className="text-lg-right">
           {currentUser && !is_owner && (profile?.following_id ? (
-            <Button className={`${btnStyles.Button} ${btnStyles.BlackOutline}`} onClick={() => handleUnfollow}>Unfollow</Button>
+            <Button className={`${btnStyles.Button} ${btnStyles.BlackOutline}`} onClick={() => handleUnfollow(profile)}>Unfollow</Button>
           ) : (
-            <Button className={`btnStyles.Button} ${btnStyles.Black}`} onClick={() => handleFollow(profile)}>Follow</Button>
+            <Button className={`${btnStyles.Button} ${btnStyles.Black}`} onClick={() => handleFollow(profile)}>Follow</Button>
           ))}
         </Col>
         {profile?.content && (<Col className="p-3">{profile.content}</Col>)}

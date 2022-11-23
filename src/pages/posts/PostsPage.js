@@ -18,6 +18,7 @@ import PopularProfiles from "../profiles/PopularProfiles";
 // to improve user experience, no more pagination
 // Handles if there are posts, handles if posts are still loading, handles if there are no comments
 
+
 function PostsPage({ message, filter = "" }) {
   const [posts, setPosts] = useState({ results: [] });
 

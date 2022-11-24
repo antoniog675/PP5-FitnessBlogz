@@ -534,12 +534,16 @@ In this image below I am searching for 'ivan' and all his posts are returnt
     ![Lighthouse result for the create post form](/src/assets/lighthouse-desktop-create-post.jpg)
     
 
-### Use ESlint to rest the whole website and individual files?
+### ESLint
+- Warnings -
+![Terminal result of es lint warnings](/src/assets/ES-LINT.jpg)
+- Corrections
+![No more es lint warnings, warnings fixed](/src/assets/ES-LINT-CORRECTED.jpg)
 
 ### W3C for CSS validation
+- All CSS files pass, no errors found
 
-Do the components within the navbar render?
-Does the navbar change according to whether the user is signed in or no?
+![W3C validaition service screenshot showing no errors](/src/assets/validator_css_passed.jpg)
 
 <hr>
 

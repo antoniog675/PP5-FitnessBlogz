@@ -12,6 +12,7 @@
     "axios": "^0.21.4",
     "bootstrap": "^4.6.0",
     "jwt-decode": "^3.1.2",
+    "prop-types": "^15.8.1",
     "react": "^17.0.2",
     "react-bootstrap": "^1.6.3",
     "react-dom": "^17.0.2",
@@ -46,6 +47,9 @@
     ]
   },
   "devDependencies": {
+    "eslint": "^8.28.0",
+    "eslint-plugin-react": "^7.31.11",
+    "eslint-plugin-testing-library": "^5.9.1",
     "msw": "^0.35.0"
   }
 }

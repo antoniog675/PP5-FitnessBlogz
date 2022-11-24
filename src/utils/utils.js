@@ -1,5 +1,5 @@
 import jwtDecode from "jwt-decode";
-import { axiosReq } from "../api/axiosDefaults"
+import { axiosReq } from "../api/axiosDefaults";
 
 export const fetchMoreData = async (resource, setResource) => {
   try {
@@ -14,6 +14,7 @@ export const fetchMoreData = async (resource, setResource) => {
       }, prevResource.results),
     }));
   } catch (err) {
+    console.log(err)
   }
 };
 

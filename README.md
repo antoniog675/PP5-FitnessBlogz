@@ -5,9 +5,9 @@
 
 ![Am I Responsive image](/src/assets/pp5_amiresponsive.jpg)
 
-This website is designed to be an Instagram like page where users post pictures, put a title and description on their posts. They will also be able to like, comments on posts and also be able to follow and unfollow profiles.
+This website is designed to be an Instagram like page where users can post pictures, put a title and write a description on their posts. They will also be able to like, comment on posts and also be able to follow and unfollow profiles.
 
-This site is targeted for people who are into fitness, for users who like to look for inspiration from other people working towards the same goal. Users will also be able to share their stories and their journey towards a healthier lifestyle, users can also share different meals they are having that is full of protein, high in nutrients and low on carbs.
+This site is targeted for people who are into fitness, for users who like to look for inspiration from other people working towards the same goal. Users will also be able to share their stories and their journey towards a healthier lifestyle, users can also share different meal plans that they are having that is full of protein, high in nutrients and low on carbs.
 
 [- Live Website -](https://fitness-blogz.herokuapp.com/)
 
@@ -536,8 +536,11 @@ In this image below I am searching for 'ivan' and all his posts are returnt
 
 ### ESLint
 - Warnings -
+
 ![Terminal result of es lint warnings](/src/assets/ES-LINT.jpg)
+
 - Corrections
+
 ![No more es lint warnings, warnings fixed](/src/assets/ES-LINT-CORRECTED.jpg)
 
 ### W3C for CSS validation
@@ -547,7 +550,42 @@ In this image below I am searching for 'ivan' and all his posts are returnt
 
 <hr>
 
-## Deployment
+## Deployment -
+
+
+### Deploying to heroku
+
+- To deploy the project I have to make sure that the main branch is up to date, everything has been commited and pushed to GitHub. Now we can start with Heroku
+
+- We will create an app for the project on heroku called 'fitness-blogz' 
+
+- In the app overview we will go to 'Deploy' and make sure our GitHub account is linked.
+
+- We will select the correct repo in the 'App connected to GitHub', the repo is called pp5-fitnessblogz.
+
+- Select deploy branch to deploy the correct and most up to date version of the app, wait for build to finish and then the app will be ready to be deployed.
+
+### Connecting to the API -
+
+- To connect to the API in the 'drf-api-pp5' app overview, we go to settings, scroll down and select reveal config vars.
+
+- In the config vars we are going to make sure we have the CLIENT_ORIGIN and that the value of this key is the url to the heroku app.
+
+### Clone
+
+- To clone the project from github you will need to log in and locate the repo to clone
+
+- In the repo there will be a button 'Code' that needs to be selected that will show the user a dropdown menu
+
+- There is gonna be an option that says 'Clone' select this option and then you can clone
+
+### Fork
+
+- You can fork the repo by taking similar steps to cloning a repo
+
+- Locate the repo and in the overview, in the top right corner you will have options and one will say fork
+
+- User can select 'fork' and can have a copy of the repo in their github account.
 
 <hr>
 
@@ -568,7 +606,6 @@ In this image below I am searching for 'ivan' and all his posts are returnt
 - Email users to confirm account
 - Pop up message
 - Messaging system, be able to contact usres, only if they allow users to contact them
-- 
 
 ## Credits and Acknowledgments
 

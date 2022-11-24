@@ -17,23 +17,19 @@ This site is targeted for people who are into fitness, for users who like to loo
 
 ## Contents -
 
-1.[User Experience](#user-experience)
+1. [User Experience](#user-experience)
 
-2.[Features](#features)
+2. [Features](#features)
 
-3.[Technologies Used](#technologies-used)
+3. [Technologies Used](#technologies-used)
 
-4.[Testing](#testing)
+4. [Testing](#testing)
 
-5.[Deployment](#deployment)
+5. [Deployment](#deployment)
 
-6.[Finished Product](#finished-product)
+6. [Bugs](#bugs)
 
-7.[Credits](#credits)
-
-8.[Bugs](#bugs)
-
-9.[Acknowledgments](#acknowledgments)
+7. [Credits and Acknowledgments](#acknowledgments)
 
 <hr>
 
@@ -536,15 +532,7 @@ In this image below I am searching for 'ivan' and all his posts are returnt
     ![Lighthouse result for the signup page](/src/assets/lighthouse-desktop-signup.jpg)
     - Add post
     ![Lighthouse result for the create post form](/src/assets/lighthouse-desktop-create-post.jpg)
-
-- Lighthouse results for mobile
-    - Feed
-    - Liked
-    - Profile
-    - Sign in
-    - Post
-    - Sign up
-    - Add post
+    
 
 ### Use ESlint to rest the whole website and individual files?
 
@@ -556,10 +544,6 @@ Does the navbar change according to whether the user is signed in or no?
 <hr>
 
 ## Deployment
-
-<hr>
-
-## Credits
 
 <hr>
 
@@ -582,7 +566,7 @@ Does the navbar change according to whether the user is signed in or no?
 - Messaging system, be able to contact usres, only if they allow users to contact them
 - 
 
-## Acknowledgments
+## Credits and Acknowledgments
 
 <hr>
 

@@ -177,13 +177,18 @@ The image below shows all user stories completed an implemented
 
     ![Wireframe to change password on mobile ](/src/assets/wireframe-changepassword-mobile.jpg)
 
-### Surface -
+## Surface -
 #### Color scheme -
 - The website is going to have a very simple design, black, white, and grey.
-- The Navbar is going to have a black background design with fonts within  being white, so that there are no issues with contrast
+
+- The Navbar is going to have a black background design with fonts being white, so that there are no issues with contrast
+
 - Sign in and Sign up buttons are going to be black with a white font, when hovered over the colours will invert.
+
 -Apart from that the buttons for adding comments, posts and edits will be grey with white fonts, and when hovered over the colours will invert
+
 #### Fonts -
+
 - Fonts used for this project are 'Josefin Sans' for the title and sub-headings of the website
 
 - The 2nd font used is 'Exo' which is going to be used for users description, and other paragraphs
@@ -598,13 +603,15 @@ In this image below I am searching for 'ivan' and all his posts are returnt
 ![The unfollow button is stuck on how it is, it does not togggle](/src/assets/bug2-unfollow-not-toggle.jpg)
 ![The code in the image is the solution to bug, just need to pass profile in the handleUnfollow](/src/assets/bug2-solved.jpg)
 
+- Another issue I have is with the lighthouse, currently the website does not perform poorly, but I would like to have all the meters colored green, the main issues was witht the different images that have been uploaded and I haven't been able to find a solution to implement to my work without causing issues.
+
 <hr>
 
 ## Future Ideas 
 
 - Sign up using email
 - Email users to confirm account
-- Pop up message
+- Pop up message - When a user signs in or out they see a message confirming this.
 - Messaging system, be able to contact usres, only if they allow users to contact them
 
 ## Credits and Acknowledgments
